@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Dummy</title>
+        <style>
+            body, html {
+                height: 100%
+            }
+            body {
+                background-color: lightgray;
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+            }
+            .container-centered {
+                width: 80vw;
+                text-align: center;
+                margin: auto;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid black;
+            }
+            .img-container {
+                display:flex;
+                flex-direction: column;
+                margin: auto;
+            }
+            .round {
+                animation-duration: 1s;
+                animation-name: imganim;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                padding: 2em;
+            }
+            @keyframes imganim {
+                from {
+                    border-radius: 0%;
+                }
+                to {
+                    border-radius: 50%;
+                }
+            }
+            .caption {
+                font-style: italic;
+                font-size: 2em;
+            }
+                
+        </style>
+    </head>
+    <body>
+        <div class="container-centered">
+            <div class="img-container">
+                <img src="https://pbs.twimg.com/profile_images/865840058397589504/SflUVPWi_400x400.jpg" class="round main">
+                <h3 class="caption">Rebekah in her natural habitat</h3>
+            </div>
+        </div>
+    </body>
+</html>
+            
