@@ -7,10 +7,11 @@
                 height: 100%
             }
             body {
-                background-color: lightgray;
+                background-color: darkred;
                 vertical-align: middle;
                 display: flex;
                 align-items: center;
+                cursor: pointer;
             }
             .container-centered {
                 width: 80vw;
@@ -45,9 +46,50 @@
             .caption {
                 font-style: italic;
                 font-size: 2em;
+                font-family: 'Caveat', cursive;
             }
-                
+            .label {
+                position: fixed;
+                opacity: 0;
+                transform: translate(-20px, -20px);
+                font-style: italic;
+                font-weight: lighter;
+                font-family: 'Caveat', cursive;
+                font-size: 1.4em;
+            }
+            .label-active {
+                z-index: 2;
+                position: fixed;
+                animation-name: fadeIn;
+                animation-duration: 0.15s;
+                animation-iteration-count: 2;
+                animation-direction: alternate;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
         </style>
+        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+        <script>
+            let say = function(event) {
+                let mousePos =  { x: event.clientX, y: event.clientY };
+                let label = document.querySelector("#label");
+                console.log(label);
+                label.classList.toggle("label-active");
+                label.style.top = mousePos.y + "px";
+                label.style.left = mousePos.x + "px";
+            };
+            document.addEventListener("click", say);
+            document.addEventListener("DOMContentLoaded", () => { 
+                let label = document.querySelector("#label");
+                label.addEventListener("animationend", () => { label.classList.toggle("label-active"); });
+            });
+        </script> 
     </head>
     <body>
         <div class="container-centered">
@@ -56,6 +98,7 @@
                 <h3 class="caption">Rebekah in her natural habitat</h3>
             </div>
         </div>
+        <p id="label" class="label">ur dumb</p>
     </body>
 </html>
             
