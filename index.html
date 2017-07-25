@@ -29,12 +29,16 @@
                 margin: auto;
             }
             .round {
+                border-radius: 50%;
+            }
+            .main {
                 animation-duration: 1s;
                 animation-name: imganim;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
                 padding: 2em;
             }
+            
             @keyframes imganim {
                 from {
                     border-radius: 0%;
@@ -48,14 +52,20 @@
                 font-size: 2em;
                 font-family: 'Caveat', cursive;
             }
+            .popimage {
+                height: 100%;
+                object-fit: contain;
+            }
             .label {
                 position: fixed;
                 opacity: 0;
-                transform: translate(-0%, -160%);
+                transform: translate(-25%, -100%);
                 font-style: italic;
                 font-weight: lighter;
                 font-family: 'Caveat', cursive;
                 font-size: 1.4em;
+                text-align: center;
+                height: 7em;
             }
             .label-active {
                 z-index: 2;
@@ -98,7 +108,10 @@
                 <h3 class="caption">Rebekah in her natural habitat</h3>
             </div>
         </div>
-        <p id="label" class="label">ur dumb</p>
+        <div id="label" class="label">
+            <img src="http://img1.wikia.nocookie.net/__cb20140116010409/rickandmorty/images/e/e8/Morty.png" class="round popimage">
+            <p style="margin: 0px;">ur dumb</p>
+        </div>
     </body>
 </html>
             
