@@ -1,17 +1,9 @@
-@keyframes imganim {
+@keyframes bounce{
     from {
-        border-radius: 0%;
+        color: var(--text-color);
     }
     to {
-        border-radius: 50%;
-    }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
+        color: var(--main-bg-color)
     }
 }
 @keyframes zFlip {

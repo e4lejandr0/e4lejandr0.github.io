@@ -1,11 +1,13 @@
 :root {
-    --main-bg-color: lightblue;
+    --main-bg-color: aliceblue;
+    --main-accent-color: lightblue;
 }
 
 body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--main-bg-color);
 }
 .row {
     width: 100%;
@@ -52,7 +54,12 @@ p {
     font-family: 'Caveat', 'Comic Sans', 'Coming Soon', sans-serif;
     font-size: 20pt;
 }
+.img-container img:hover {
+    animation-name: zFlip;
+    animation-duration: 1s;
+}
 .img-container img {
+    margin-bottom: 1.5em;
     height: 20em;
     border-radius: 50%;
 }
@@ -61,7 +68,6 @@ p {
     font-size: 14pt;
 }
 .img-top {
-    background-color: red;
     height: 15vh;
     width: 15vh;
     border-radius: 50%;
@@ -69,7 +75,7 @@ p {
 
 .tab-bar {
     margin: 1em 0em;
-    background-color: lightblue;
+    background-color: var(--main-accent-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,13 +91,19 @@ p {
     height: 100%;
     font-size: 2em;
     margin: 0em 1em;
-    background-color: var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
     font-family: 'Comic Sans', 'Coming Soon', sans-serif;
     cursor: pointer;
 }
+.tab:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
 .footer {
     padding: 1em 0em;
-    border-top: 1px solid var(--main-bg-color);
+    border-top: 1px solid var(--main-accent-color);
     text-align: center;
 }
 #text-content {
