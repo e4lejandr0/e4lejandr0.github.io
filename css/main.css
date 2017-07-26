@@ -43,7 +43,6 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid var(--main-bg-color);
 }
 .img-group {
     height: 80%;
@@ -85,11 +84,14 @@ p {
     display: inline;
 }
 .tab-list {
+    display: flex;
+    flex-direction: row;
     padding: 1em 0em;
 }
 .tab {
+    text-align: center;
     height: 100%;
-    font-size: 2em;
+    font-size: 4vmin;
     margin: 0em 1em;
     border-bottom: 1px solid var(--main-bg-color);
     font-family: 'Comic Sans', 'Coming Soon', sans-serif;
