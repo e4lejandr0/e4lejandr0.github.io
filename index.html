@@ -2,120 +2,52 @@
 <html>
     <head>
         <title>Hello Dummy</title>
-        <style>
-            body, html {
-                margin: 0%;
-                height: 100%;
-            }
-            body {
-                background-image: url("background.png");
-                background-color: darkred;
-                vertical-align: middle;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-            }
-            .container-centered {
-                width: 80vw;
-                text-align: center;
-                margin: auto;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                border: 1px solid black;
-                background-repeat: no-repeat;
-                background-position: center center;
-            }
-            .img-container {
-                display:flex;
-                flex-direction: column;
-                margin: auto;
-                color: white;
-            }
-            .round {
-                border-radius: 50%;
-            }
-            .main {
-                animation-duration: 1s;
-                animation-name: imganim;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                padding: 2em;
-            }
-            
-            @keyframes imganim {
-                from {
-                    border-radius: 0%;
-                }
-                to {
-                    border-radius: 50%;
-                }
-            }
-            .caption {
-                font-style: italic;
-                font-size: 2em;
-                font-family: 'Caveat', cursive;
-            }
-            .popimage {
-                height: 100%;
-                object-fit: contain;
-            }
-            .label {
-                position: fixed;
-                opacity: 0;
-                transform: translate(-25%, -100%);
-                font-style: italic;
-                font-weight: lighter;
-                font-family: 'Caveat', cursive;
-                font-size: 2em;
-                text-align: center;
-                height: 7em;
-            }
-            .label-active {
-                z-index: 2;
-                position: fixed;
-                animation-name: fadeIn;
-                animation-duration: 0.5s;
-                animation-iteration-count: 2;
-                animation-direction: alternate;
-            }
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-        <script>
-            let say = function(event) {
-                let mousePos =  { x: event.clientX, y: event.clientY };
-                let label = document.querySelector("#label");
-                console.log(label);
-                label.classList.toggle("label-active");
-                label.style.top = mousePos.y + "px";
-                label.style.left = mousePos.x + "px";
-            };
-            document.addEventListener("click", say);
-            document.addEventListener("DOMContentLoaded", () => { 
-                let label = document.querySelector("#label");
-                label.addEventListener("animationend", () => { label.classList.toggle("label-active"); });
-            });
-        </script> 
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script type="text/javascript" src="/js/main.js"></script>
     </head>
     <body>
-        <div class="container-centered">
-            <div class="img-container">
-                <img src="https://pbs.twimg.com/profile_images/865840058397589504/SflUVPWi_400x400.jpg" class="round main">
-                <h3 class="caption">Rebekah in her natural habitat</h3>
+        <nav class="nav-bar">
+            <div class="row">
+                <div class="container-fill">
+                    <img src="https://pbs.twimg.com/profile_images/865840058397589504/SflUVPWi_400x400.jpg" class="img-top">
+                    <h3 class="caption">Rebekah in her natural habitat</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tab-bar">
+                    <ul class="tab-list">
+                        <li class="tab" data-link-target="bitches">Bitches on Wheels</li>
+                        <li class="tab" data-link-target="bio">Bio</li>
+                        <li class="tab" data-link-target="memes">Memes</li>
+                        <li class="tab" data-link-target="game">Rebekah The Game</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fill">
+            <div class="content">
+                <div class="row">
+                    <h1 class="title" id="title">Bitches on Wheels</h1>
+                </div>
+                <div class="row">
+                    <div class="img-container">
+                        <div class="img-group">
+                            <img id="main-image" src="https://pbs.twimg.com/profile_images/865840058397589504/SflUVPWi_400x400.jpg" alt="ur great">
+                            <h3 id="caption" class="img-label">Bitches on Wheels</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="text-content" class="row">
+                </div>
             </div>
         </div>
-        <div id="label" class="label">
-            <img src="http://img1.wikia.nocookie.net/__cb20140116010409/rickandmorty/images/e/e8/Morty.png" class="round popimage">
-            <p style="margin: 0px; color: white;">u r carbon</p>
+        <div class="footer">
+            <div class="row">
+                <p>Made by Edd, for Rebekah</p>
+            </div>
         </div>
     </body>
 </html>

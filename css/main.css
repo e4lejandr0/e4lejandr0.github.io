@@ -1,0 +1,102 @@
+:root {
+    --main-bg-color: lightblue;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bar {
+    height: 30vh;
+    margin: 1em 0em;
+}
+.caption {
+    font-family: 'Comic Sans', 'Coming Soon', sans-serif;
+    margin: auto;
+}
+.container-fill {
+    text-align: center;
+    flex: 1 0 auto;
+}
+.content {
+    margin: 3em auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-family: 'Comic Sans', 'Coming Soon', sans-serif;
+    font-size: 35pt;
+}
+.img-container {
+    padding: 2em;
+    margin: 1em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid var(--main-bg-color);
+}
+.img-group {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    font-family: 'Caveat', 'Comic Sans', 'Coming Soon', sans-serif;
+    font-size: 20pt;
+}
+.img-container img {
+    height: 20em;
+    border-radius: 50%;
+}
+.img-label {
+    font-family: 'Caveat', sans-serif;
+    font-size: 14pt;
+}
+.img-top {
+    background-color: red;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+}
+
+.tab-bar {
+    margin: 1em 0em;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab-list, .tab {
+    display: inline;
+}
+.tab-list {
+    padding: 1em 0em;
+}
+.tab {
+    height: 100%;
+    font-size: 2em;
+    margin: 0em 1em;
+    background-color: var(--main-bg-color);
+    font-family: 'Comic Sans', 'Coming Soon', sans-serif;
+    cursor: pointer;
+}
+.footer {
+    padding: 1em 0em;
+    border-top: 1px solid var(--main-bg-color);
+    text-align: center;
+}
+#text-content {
+    flex: 2 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
