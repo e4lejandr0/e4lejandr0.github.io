@@ -2,7 +2,7 @@
 let data = {
     "bitches": {
         "content": "<p>Bitches on Wheels is my company. I found it on 2017 in the spurr of the moment. Our mission is to make sure that all bitches are able to afford the wheels they deserve.</p>",
-        "imgSrc": "http://suzannevince.com/wp-content/uploads/2014/06/Bitch-on-Wheels-pic.jpg",
+        "imgSrc": "https://c2.staticflickr.com/4/3041/2898140360_1aa4a35948_z.jpg?zz=1",
         "title": "Bitches on Wheels",
         "caption": "these are my bitches"
     },
