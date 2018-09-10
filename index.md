@@ -11,6 +11,8 @@ topics covered therein.
 
 ## Index
 
-1. Linux and KDE: Two Open Source Communities
+{% for post in site.posts %}
+	1. [{{post.title}}](post.url)
+{% endfor %}
 
 ---
