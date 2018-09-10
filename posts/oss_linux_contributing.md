@@ -40,7 +40,7 @@ Overall the Linux kernel developers are a tighly-knit bunch so before asking a q
 to RTFM and Google as much as possible. Once you have proven yourself to the community they are very
 responsive and helpful. 
 
-#### Contributing
+### Contributing
 
 In order to contribute to the Linux Kernel the first step is to grab a copy of the Linux source code.
 Once you have it you can start hacking away. The kernel itself is written in C and it can look pretty
@@ -51,9 +51,9 @@ build without optimizations).
 
 These are the things you will need to send a basic patch:
 
-1. git: version control system of the kernel
-2. a mail client: `mutt` is the preferred mail client of the Linux community
-3. Some kind of change to the kernel
+- `git`: version control system of the kernel
+- a mail client: `mutt` is the preferred mail client of the Linux community
+- Some kind of change to the kernel
 
 Number 1 and 2 are out of the scope of this article but you can check the
 [official documentation](https://www.kernel.org/doc/html/v4.17/process/submitting-patches.html)
