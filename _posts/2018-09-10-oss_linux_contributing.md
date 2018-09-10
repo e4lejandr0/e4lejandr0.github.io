@@ -28,9 +28,9 @@ This is the first roadblock one would encounter when wanting to contribute to th
 contributors some people have decided to set up an unofficial mailing list targeted towards wannabe
 contributors.
 
-Because the development of linux is almost exclusively discussed on mailing lists it is very important
+Because the development of Linux is almost exclusively discussed on mailing lists it is very important
 for a possible contributor to get a grasp of how to receive and interact with mailing lists properly.
-The main linux kernel mailing lists receives thousands of emails per day, the communication is really
+The main Linux kernel mailing lists receives thousands of emails per day, the communication is really
 fast and errors in formatting(or etiquette) can result in your message being completely ignored.
 
 Personally, I've sent a minor patch before which got silently ignored and it is to be expected.
@@ -40,7 +40,7 @@ have set up an unofficial mailing list at [Kernel Newbies](https://kernelnewbies
 which I strongly recommend. It is a pretty good information resource and I can usually see
  [Greg Kroah-Hartman](https://en.wikipedia.org/wiki/Greg_Kroah-Hartman) himself answering questions.
 
-Overall the Linux kernel developers are a tighly-knit bunch so before asking a question you will want
+Overall the Linux kernel developers are a tightly-knit bunch so before asking a question you will want
 to RTFM and Google as much as possible. Once you have proven yourself to the community they are very
 responsive and helpful. 
 
@@ -48,7 +48,7 @@ responsive and helpful.
 
 In order to contribute to the Linux Kernel the first step is to grab a copy of the Linux source code.
 Once you have it you can start hacking away. The kernel itself is written in C and it can look pretty
-daunting to a newbie. In order to maximize performance the kernel developers abuse compiler behavior,
+daunting to a newbie. In order to maximize performance the kernel developers abuse compiler behaviour,
 exploit undefined behaviour, implementation specific behaviour and other shenanigans of that nature.
 Due to the nature of the code the Kernel only compiles using GCC with `-O2` (no, the kernel doesn't)
 build without optimizations). 
@@ -82,7 +82,7 @@ you get any warnings coming from that script ideally you would fix them before s
 (if you do not do this there is a big chance no one will bother reviewing your code).
 
 The code review process starts at the mailing once you have fixed all checkpatch.pl warnings you can
-send the patch file using your favorite mail client or even git itself(see `git send-mail`). The review
+send the patch file using your favourite mail client or even git itself(see `git send-mail`). The review
 process itself can take weeks and sometimes the maintainers might miss your patch because of the sheer
 volume of patches received so it is important to not have any formatting issues in your code or commit
 message to maximize the chances of getting approved.
@@ -93,16 +93,16 @@ The more people you message the less likely it is you'll patch will get lost.
 After sending your patch all you can do is wait, each maintainer/developer will provide feedback and/or
 sign off your patch. You must fix all the feedback and/or defend your technical decisions on the mailing list
 to get approval and if you are lucky the correspondent subsystem maintainer will apply their patch to
-their tree which will eventually make it to Linus' tree and into the mainstream kernel, congrast you
+their tree which will eventually make it to Linus's tree and into the mainstream kernel, congrats you
 are a kernel developer.
 
 ### Conclusions
 
 The Linux Kernel is definitely not an easy project to contribute to. It requires a lot of technical
-background and C proefficiency along with learning the rules of community(which are pretty heavily
+background and C proficiency along with learning the rules of community(which are pretty heavily
 documented). The community is unwilling to help newbies to some degree, mostly motivated by the fact
-that any programmer at some point has the thoughts "I wanna contritube to the kernel" and the community
-can't possibly answer the same questions everytime. You will find lots of people silently pointing to
+that any programmer at some point has the thoughts "I wanna contribute to the kernel" and the community
+can't possibly answer the same questions every time. You will find lots of people silently pointing to
 docs but it is a wonderful learning experience.
 
 Personally I have found that the discussions in the kernel mailing list are highly technical and informative
