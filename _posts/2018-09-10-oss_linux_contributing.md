@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Two Open Source Communities: Linux and KDE"
+author: Alex
+tags: ['linux', 'opensource', 'oss', 'foss', 'kde']
 ---
-
-## Two Open Souce Communities: Linux and KDE
-
 As part of the first assignment for my Software Portability and Optimization class
 I've been tasked to approach two open source projects with freeware GPL compatible licenses.
 
