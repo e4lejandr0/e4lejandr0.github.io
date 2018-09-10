@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two Open Source Communities: Linux and KDE
+title: "Two Open Source Communities: Linux and KDE"
 ---
 
 ## Two Open Souce Communities: Linux and KDE
