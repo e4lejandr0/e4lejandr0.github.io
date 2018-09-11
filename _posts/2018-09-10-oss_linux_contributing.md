@@ -5,7 +5,7 @@ author: Alex
 tags: ['linux', 'opensource', 'oss', 'foss', 'kde']
 ---
 As part of the first assignment for my Software Portability and Optimization class
-I've been tasked to approach two open source projects with freeware GPL compatible licenses.
+I've been tasked to approach two open source projects with GPL compatible licenses.
 
 Fortunately for me I've been wanting to contribute to open source software multiple times over the years.
 The two projects that I am most interested in are the Linux Kernel and the KDE project. I am an avid
