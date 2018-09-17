@@ -1,6 +1,7 @@
-# akdev's blog
 ---
-
+title: Index
+tags: ['foss', 'spo600', 'linux', 'kde']
+---
 ## SPO600: Blog
 
 Thanks to the software portability class I have gotten
@@ -11,7 +12,7 @@ topics covered therein.
 
 ## Index
 
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
 1. [{{post.title}}]({{ post.url }})
 {% endfor %}
 
