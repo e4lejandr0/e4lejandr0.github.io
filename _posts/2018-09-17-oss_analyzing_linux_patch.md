@@ -1,11 +1,9 @@
 ---
-layout = post
-title = Analyzing a Linux Patch
-author = Alex
-tags = ['linux', 'patch', 'foss']
+layout: post
+title: "Analyzing a Linux Patch"
+author: Alex
+tags: ['linux', 'patch', 'foss']
 ---
-## Analyzing a Linux Patch
-
 As part of my SPO600 assignment I was tasked to take a look at a successful patch applied
 to a project of my choice. I chose Linux and in the previous blog post I discussed the community
 around Linux and gave an overview of the process that one has to go through if one wants
@@ -79,8 +77,8 @@ Let's take a detailed look at the commit message of this patch:
     Cc: stable@vger.kernel.org
 ```
 
-The first line is the header. This line appears when issuing a `git log --oneline' or when looking
-at the git shortlog because of this it is very important that the first line of the commit message 
+The first line is the header. This line appears when issuing a `git log --oneline` or when looking
+at `git shortlog` and because of this it is very important that the first line of the commit message 
 follows the standard format of the Linux Kernel.
 
 The header must include the subsystem that is affected by the change in the patch and a one-line 
