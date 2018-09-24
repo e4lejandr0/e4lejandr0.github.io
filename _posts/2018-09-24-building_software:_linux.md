@@ -83,4 +83,16 @@ The compilation process can take a while depending on your hardware. For referen
 one hour on my laptop(8GB of RAM, i7 7500U) and roughly around twenty minutes on my desktop(8GB of RAM,
 Ryzen 1600).
 
-That is it for today, later I'll post an entry about compiling glibc.
+# Testing the kernel
+
+The least disruptive way of testing the kernel is firing up a qemu instance. Qemu allows to  boot directly
+from the linux image file(usually named `bzImage`).
+
+```bash
+# We pass the -kernel flag and we also need to give the VM a hard drive with a root filesystem
+qemu -kernel ./arch/boot/x86/bzImage -hd0 linuxhd.img
+```
+
+After doing this a qemu instance should pop up booting the new kernel. The root filesystem must have a properly
+laid out unix filesystem and a working init system(I tend to use gentoo stage-3 as user space) or the kernel will
+simply just panic. 
