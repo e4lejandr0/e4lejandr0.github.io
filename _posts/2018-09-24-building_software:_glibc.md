@@ -93,6 +93,8 @@ This is a naive patch that achieves that effect:
 <   done = vfprintf (stdout, format, arg);
 ---
 >   done = vfprintf (stdout, new_format, arg);
+34a49
+>   free(new_format);
 ```
 
 Now to test the new libc we've got to link against it. For some unknown(to me) reason the official
