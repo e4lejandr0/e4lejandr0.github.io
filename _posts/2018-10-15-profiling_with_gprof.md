@@ -7,7 +7,7 @@ author: Alex
 One of the key points when doing software optimization is that
 you must know where the bottlenecks in your program are. It would
 make very little sense to spend a lot of time optimizing a function
-that only makes up for ~1% of the runtime. But how can we know what
+that only makes up for ~1% of the runtime. But how can we know which
 functions are critical for performance? This is where the different
 profiling tools come in.
 
@@ -25,8 +25,8 @@ Let's digest this definition a bit: `profiling is a form of analysis that
 measures the space(memory) or time complexity of a program`. From this
 simplified definition we can see that profiling is just measuring either
 how much memory a program uses(space) or how long does it take to run (time).
-It's worth noting that we can profile for other variables rather than space
-or time but we will be focusing on these two.
+It's worth noting that we can profile for other variables other than space
+and time but we will be focusing on these two.
 
 # Tools
 
@@ -129,7 +129,7 @@ my laptop(i7-7200U, 8GB of RAM, 1TB SSD).
 
 Alright but now how can we start profiling this program? The first thing we need to do is to compile
 the program with the profiling code enabled. The GNU Profiler needs code added to the program to
-measure each function call a downside of this approach is that we need to recompile our program
+measure each function call. A downside of this approach is that we need to recompile our program
 if we want to profile it.
 
 We must add the `-pg` flag to out command line:
@@ -137,7 +137,7 @@ We must add the `-pg` flag to out command line:
 ```bash
 $ gcc cp.c -pg -o cp
 ```
-Then we need to run the program as usual, this will generate a `gmon.out` file which contains all
+Then we need to run the program as usual; this will generate a `gmon.out` file which contains all
 the statistics we need. We can read the `gmon.out` file by using the `gprof` command and passing the
 related executable to it.
 
@@ -297,13 +297,13 @@ Index by function name
 
 As we can see the output of gprof is quite extensive. It gives us a table
 of all the functions called in our program along with relative and absolute
-timings for each one. From the output above we can see the program spends
+timings for each one. From the output above, we can see the program spends
 100% of its runtime in the `copy()` function. If we were to optimize this
 tiny program this is where we should start.
 
-`gprof` will also gives a count of how many times a function was called
-allowing us to quickly spot which functions are part of the "hot path" and
-which ones we can safely ignore when optimizing.
+`gprof` will give a count of how many times a function was called, allowing
+us to quickly spot which functions are part of the "hot path" and which ones
+we can safely ignore when optimizing.
 
 # Conclusions
 
