@@ -125,7 +125,7 @@ $ ./cp /path/to/source /path/to/destination
 ```
 
 This may take a bit depending on the size of the file, with 1GB of data it takes a few seconds on
-my laptop(i7-7500U, 8GB of RAM, 1TB SSD).
+my laptop(i7-7200U, 8GB of RAM, 1TB SSD).
 
 Alright but now how can we start profiling this program? The first thing we need to do is to compile
 the program with the profiling code enabled. The GNU Profiler needs code added to the program to
