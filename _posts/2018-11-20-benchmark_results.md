@@ -8,7 +8,7 @@ author: Alex
 My benchmark results are due tomorrow so there is no time like
 today to share my results with you. In previous blog posts I have
 explained what my environment looks like and what kind of benchmark
-I am running(see [the environment]({% post_url 2018-11-18-spo600_stage2:_environment_setup %})
+I am running(see [the environment]({% post_url 2018-11-18-spo600_stage_2:_environment_setup %})
 and [the benchmark]({% post_url 2018-11-19-spo600_stage_2:_benchmarks %}) so in this post
 I will focus on results only.
 
