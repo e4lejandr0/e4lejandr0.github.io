@@ -1,5 +1,5 @@
 ---
-title: "SPO600 Stage 2: The Benchmark"
+title: "SPO600 Stage 2: The Results"
 layout: post
 tags: ['c++', 'stage2', 'libc++', 'bash']
 author: Alex
@@ -122,7 +122,7 @@ These are the results:
 +    6.29%     1.99%  bench    bench              [.] std::__1::vector<std::__1::pair<unsigned long, char const*>, std::__1::allocator<std::__1::pair<unsigned long, char co
 +    6.22%     6.18%  bench    libc-2.28.so       [.] _int_free
 ```
-Here we can see `__bracket_expression::__exec` taking roughly 6% of the run time. The results are consistant across runs.
+Here we can see `__bracket_expression::__exec` taking roughly 6% of the run time. The results are consistent across runs.
 
 ## aarch64
 
@@ -135,7 +135,7 @@ Here we can see `__bracket_expression::__exec` taking roughly 6% of the run time
 +   10.09%     8.71%  bench    libc-2.28.so       [.] _int_free                                                                                                             ▒
 +    8.51%     8.25%  bench    bench              [.] std::__1::__bracket_expression<char, std::__1::regex_traits<char> >::__exec
 ```
-This report has been edited for brevety, there were more symbols above these ones.
+This report has been edited for brevity, there were more symbols above these ones.
 
 Again I can see that `bracket_expression::__exec` is taking 8% of the runtime. Slightly higher than `x86_64` which hopefully means there is room for improvement there.
 
@@ -143,8 +143,8 @@ Again I can see that `bracket_expression::__exec` is taking 8% of the runtime. S
 # Conclusions
 
 From these benchmarks I have identified some possible points where optimization could be applied.
-I will further investigate those hotspots and find out if there's any wya of making them better.
+I will further investigate those hot-spots and find out if there's any way of making them better.
 
-I have put the benchmarks on my [Github](https://github.com/e4lejandr0/libcxx-benchmarks) and it also contains the Dockerfile in case you would like
+I have put the benchmarks on my [GitHub](https://github.com/e4lejandr0/libcxx-benchmarks) and it also contains the Dockerfile in case you would like
 reproduce my tests(requires a Fedora 29 kernel because of perf).
 
