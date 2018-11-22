@@ -1,7 +1,7 @@
 ---
 title: "SPO600 Stage 2: The Benchmark"
 layout: post
-tags: []
+tags: ['c++', 'stage2', 'libc++', 'bash']
 author: Alex
 ---
 
