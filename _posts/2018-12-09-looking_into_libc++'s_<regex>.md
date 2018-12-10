@@ -1,5 +1,5 @@
 ---
-title: "Looking Into libc++'s <regex>"
+title: "Looking Into libc++'s regex engine"
 layout: post
 tags: ['c++', 'libcxx', 'libc++', 'regex']
 author: Alex
