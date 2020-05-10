@@ -75,7 +75,6 @@ _start:
  
     mov     x19, start    /* initialize loop counter */
 loop:
-    mov     x0, 1
     mov     x0, 1         /* file descriptor: 1 is stdout */
     adr     x1, msg       /* message location (memory address) */
     mov     x2, len       /* message length (bytes) */
@@ -105,8 +104,8 @@ instructions and not add superfluous ones. For this reason in ARM64 there is
 no `inc` instruction, the increment is done by simply adding one to the counter.
 
 On x86 they provide a specialized instruction just increment a value. This is because
-x86 is largely a RISC instruction set whereas ARM64 leaning more towards being a
-CISC instruction set.
+x86 is largely a CISC instruction set whereas ARM64 leaning more towards being a
+RISC instruction set.
 
 ## Printing the counter
 
